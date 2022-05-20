@@ -1,0 +1,26 @@
+{
+  "name": "bin2dec",
+  "version": "1.0.0",
+  "description": "Convert binary to decimal",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "binary",
+    "decimal"
+  ],
+  "author": "aramlr",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "braintree-jsdoc-template": "^3.3.0",
+    "jsdoc": "^3.6.10",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4"
+  }
+}

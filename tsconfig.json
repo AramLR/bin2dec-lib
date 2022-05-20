@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2015",
+    "lib": ["ES2022"],
+    "alwaysStrict": true,
+    "outDir": "dist",
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": ["src/**/*"],
+}
