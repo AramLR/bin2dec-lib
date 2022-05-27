@@ -9,7 +9,7 @@
  */
 function byte2Dec(byte:string):string{
 
-  const regex = /(0|1)*/
+  const regex = /\b[01]+\b/
 
   if(!regex.test(byte)) throw new Error('Invalid binary number.')
 
