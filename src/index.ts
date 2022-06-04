@@ -1,27 +1,20 @@
 /**
- * Converts a binary text to decimal<br>
+ * Converts a byte to decimal number
  * 
- * ! Note that with big binaries may not work due to javascript bigint limit
- * 
- * @param {string} byte Binary to convert as string
- * @returns {string} The byte converted to decimal
- * @author aramlr
+ * @param byte byte to convert
+ * @returns the byte converted to decimal
  */
-function byte2Dec(byte:string):string{
-
-  const regex = /\b[01]+\b/
-
-  if(!regex.test(byte)) throw new Error('Invalid binary number.')
-
-  let c = byte.length-1
-  let res = BigInt(0)
+function byte2Dec(byte:string):bigint{
+  let length = byte.length - 1
+  let res = BigInt(0) 
 
   for (const bit of byte) {
-    res += BigInt(bit) * BigInt(Math.pow(2, c))
-    c--      
+    res += BigInt(bit) * BigInt(Math.pow(2, length))
+
+    length--
   }
 
-  return res.toString()
+  return res
 }
 
 export default byte2Dec
